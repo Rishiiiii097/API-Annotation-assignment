@@ -1,0 +1,74 @@
+Assignment  
+Of 
+ API'S and Annotations 
+ 
+1.Program to display current date and time in java? Ans:- 
+import java.util.*; public class GFG { 
+ 	public static void main(String args[]) 
+ 	{ 
+ 	 	Date current_Date = new Date(); 
+ 	 	System.out.println(current_Date); 
+ 	} 
+} 
+2.Write a program to convert a data to a string in the format 
+"MM/DD/YYYY"? 
+Ans:- public static Date stringToDateLinen(String dateVlaue) { 
+    Date date = null; 
+    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd"); 
+ 
+    try { 
+ 
+        date = formatter.parse(dateVlaue); 
+ 
+    } catch (ParseException e) {         e.printStackTrace(); 
+    } 
+    return date; 
+} 
+ 
+3.What is difference between collections and streams? Explain with an example? 
+Ans:- 
+   STREAMS         
+  COLLECTIONS           
+
+
+It doesn't store data, it operates on the source data structure i.e collection. 
+It stores/holds all the data that the data structure currently has in a particular data 
+structure like Set, List or Map, 
+
+
+They use functional interfaces like lambda which makes it a good fit for programming language. 
+Don't use functional interfaces. 
+
+
+Java Streams are consumable 
+i.e; to traverse the stream, it needs to be created every time. 
+Non-consumable i.e; can be traversable multiple times without creating it again. 
+
+
+Java streams support both sequential and parallel processing. 
+Supports parallel processing and parallel processing can be very helpful in achieving high performance. 
+
+
+All the Java stream API interfaces and classes are in java.util.stream package. 
+Specific classes for primitive types such as IntStream, LongStream, and DoubleStream are used in collections since primitive data types such as int, long in the collections using auto-boxing and these operations could take a lot of time. 
+
+
+Streams are not modifiable i.e one can't add or remove elements from streams. 
+These are modifiable i.e one can easily add to or remove elements from collections. 
+
+
+
+
+ 
+4.What is enum in java? Give with an example 
+Ans;- The Enum in Java is a data type which contains a fixed set of constants. 
+It can be used for days of the week (SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, and SATURDAY) , directions (NORTH, SOUTH, EAST, and WEST), season (SPRING, SUMMER, WINTER, and AUTUMN or FALL), colors (RED, YELLOW, BLUE, GREEN, WHITE, and BLACK) etc. According to the Java naming conventions, we should have all constants in capital letters. So, we have enum constants in capital letters. 
+ 
+5.What are inbuilt annotation in java? 
+Ans:- Annotations are used to provide supplemental information about a program.  
+ Annotations start with '@'. 
+ Annotations do not change the action of a compiled program. 
+ Annotations help to associate metadata (information) to the program elements i.e. instance variables, constructors, methods, classes, etc. 
+ Annotations are not pure comments as they can change the way a program is treated by the compiler. See below code for example. 
+ Annotations basically are used to provide additional information, so could be an alternative to XML and Java marker interfaces. 
+ 
